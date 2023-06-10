@@ -1,4 +1,4 @@
-package com.flamesunrises.demo;
+package com.flamesunrises.demo.client;
 
 import com.flamesunrises.demo.service.GreetingServiceGrpc;
 import com.flamesunrises.demo.service.Hello.HelloRequest;

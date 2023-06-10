@@ -49,6 +49,7 @@ public class GreetingServer {
     @Override
     public void sayHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
       String name = request.getName();
+      System.out.println("GreetingServiceImpl name = " + name);
       String message = "Hello, " + name + "!";
 
       HelloResponse response = HelloResponse.newBuilder()
@@ -59,6 +60,4 @@ public class GreetingServer {
       responseObserver.onCompleted();
     }
   }
-
-
 }
